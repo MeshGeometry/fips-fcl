@@ -13,13 +13,11 @@ endif()
 
 if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS_OSX_USE_ARC OR FIPS_UWP))
 
-    
     fips_begin_lib(libccd)
     set(FIPS_EXCEPTIONS ON)
     set(FIPS_RTTI ON)
     include_directories(libccd/src)
     fips_src(libccd/src RECURSE GROUP)
-    add_definitions(-DCCD_DOUBLE)
     fips_end_lib()
 
 
@@ -28,7 +26,6 @@ if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS
     set(FIPS_RTTI ON)
     include_directories(fcl/include)
     fips_src(fcl/src RECURSE GROUP)
-    add_definitions(-DCCD_DOUBLE)
     fips_end_lib()
 
 endif()
