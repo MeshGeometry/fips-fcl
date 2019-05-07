@@ -13,6 +13,8 @@ endif()
 
 if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS_OSX_USE_ARC OR FIPS_UWP))
 
+
+
     fips_begin_lib(libccd)
     set(FIPS_EXCEPTIONS ON)
     set(FIPS_RTTI ON)

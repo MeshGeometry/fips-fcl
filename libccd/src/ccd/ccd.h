@@ -18,9 +18,6 @@
 #ifndef __CCD_H__
 #define __CCD_H__
 
-// TODO: find better way to control single vs double
-#define CCD_DOUBLE
-
 #include <ccd/vec3.h>
 
 #ifdef __cplusplus
