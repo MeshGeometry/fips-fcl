@@ -1,0 +1,16 @@
+#
+# fips-libigl
+#
+---
+imports:
+    eigen:
+      git:    https://github.com/MeshGeometry/fips-eigen.git
+
+exports:
+    header-dirs: 
+      - ./fcl/include
+      - ./libccd/src
+    modules:
+      fcl: .
+      libccd: .
+
