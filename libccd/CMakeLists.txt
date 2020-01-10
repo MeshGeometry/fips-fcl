@@ -20,7 +20,7 @@ include(CTest)
 
 option(BUILD_DOCUMENTATION "Build the documentation" OFF)
 
-option(BUILD_SHARED_LIBS "Build libccd as a shared library" ON)
+option(BUILD_SHARED_LIBS "Build libccd as a shared library" OFF)
 
 option(ENABLE_DOUBLE_PRECISION
   "Enable double precision computations instead of single precision" OFF)
